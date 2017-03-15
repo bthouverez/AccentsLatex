@@ -1,0 +1,101 @@
+% Bastien Thouverez, Yann Cortial
+% Rendu 2 Modélisation géométrique
+% Octobre 2016
+
+
+\documentclass[10pt]{article}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{a4wide}
+\usepackage{fancyhdr}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\pagestyle{fancyplain}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usepackage{hyperref}
+\usepackage{todonotes}
+\usepackage{movie15}
+\usetikzlibrary{arrows}
+
+
+\setcounter{tocdepth}{2}
+\addtolength{\headheight}{1.5pt}
+\fancyfoot[LO]{Universit\'e Lyon1} 
+
+
+
+\begin{document}
+\begin{titlepage}
+	\centering
+	{\includegraphics[width=150px]{lyon1.png}\par}
+	\vspace{.5cm}
+	{\scshape\large Universit\'e Claude Bernard, Lyon1 \par}
+	\vspace{2cm}
+	{\scshape\LARGE Mod\'elisation g\'eom\'etrique \par}
+	\vspace{1cm}
+	{\huge\bfseries \Huge{Travaux Pratiques 2\\ NURBS via NanoEdit\par}}
+	\vfill
+	{\Large\itshape Yann Cortial, Bastien Thouverez\par}
+
+\end{titlepage}
+
+
+
+\section{Lancement du programme}
+Notre programme NURBS peut \^etre lanc\'e sur NanoEdit via le raccourci 'YB'
+
+ou via le menu Cr\'eation/BabsYann/NURBS\_insertion
+
+
+\section{Fonctionnalit\'es du programme}
+
+Sur la figure obtenue, via l'\'edition, il est possible de:
+ \begin{itemize}
+\item d\'eplacer les points de contr\^ole sur la figure (ou \`a la main dans la fen\^etre d'\'edition)
+\item modifier/ajouter/supprimer un point de contr\^ole \`a la main (le degr\'e s'adapte s'il n'y a plus assez de points)
+\item changer le degr\'e des morceaux de courbes (reste inchang\'e si 0 ou si sup\'erieur au nombre de points de contr\^ole \item 1)
+\item modifier le nombre de points affich\'es pour la courbe
+\item de modifier les valeurs de la s\'equence nodale
+\item d'ins\'erer un point dans la s\'equence nodale
+\item d'afficher ou non les points de contr\^ole
+ 
+ \end{itemize}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=200px]{edition.png}
+\caption{Panneau d'\'edition}
+\end{figure}
+
+
+\section{R\'esultat en images}
+
+Un gif est pr\'esent dans l'archive. Il montre l'insertion de n\oe ud dans la s\'equence nodale.
+
+A partir de la courbe de d\'epart, 13 points sont ajout\'es un \`a un dans la s\'equence nodale.
+
+La courbe reste bien inchang\'ee.\\
+
+La s\'equence nodale est pass\'ee de\\
+
+(0 0 0 0.2 0.4 0.6 0.8 1 1 1)\\
+
+\`a \\
+
+(0 0 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.72 0.73 0.74 0.75 0.77 0.78 0.79 0.8 0.9 0.95 0.98 1 1 1)
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=400px]{insert1.png}\vspace{.4cm}
+\includegraphics[width=400px]{insert2.png}
+\caption{Courbe avant et apr\`es insertions de points dans la s\'equence nodale}
+\end{figure}
+
+
+\end{document}
+

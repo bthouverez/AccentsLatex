@@ -1,0 +1,82 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% text justify
+\usepackage{ragged2e}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Bastien}
+\familyname{Thouverez}
+\title{\Large Student volunteer}                               % optional, remove / comment the line if not wanted
+\address{35 Chemin de l'\'Etang Dent}{01390 CIVRIEUX}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\mobile{00 33 7 64 07 79 91} 
+\email{bastien.thouverez@etu.univ-lyon1.fr}                               % optional, remove / comment the line if not wanted                        % optional, remove / comment the line if not wanted               % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+                               % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Eurographics 2017}{European association for computer graphics\\\texttt{contact@eurographics2017.fr}}
+\date{Vendredi 20 Janvier 2017}
+\opening{Madame, Monsieur,}
+\closing{Dans l'attente d'une réponse de votre part, je vous prie d'agréer, madame, monsieur, l'expression de mes salutations distinguées.}
+\enclosure[P.J]{Curriculum Vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+\justify
+\'Etudiant en seconde année de master informatique, spécialisation Image, Développement et Technologie 3D avec option Recherche à l’Université Claude Bernard Lyon1, je souhaite intégrer l’équipe des "Student Volunteers" pour la conférence EuroGraphics 2017 se déroulant à Lyon en Avril 2017.
+
+Désirant devenir enseignant-chercheur, être au cœur de cet événement et contribuer à sa bonne organisation me permettrait d’observer et de comprendre le déroulement d’une conférence scientifique, m' offrant ainsi un très bon exercice pratique après les cours qui nous ont été enseignés dans l’UE de connaissances métier recherche.
+
+De plus, pouvoir assister à cette conférence représenterait pour moi une belle opportunité de découvrir encore davantage le monde de la recherche, d'éventuellement échanger avec des experts du domaine et de commencer ainsi à établir un réseau de contacts.
+
+Mon fort intérêt pour la recherche et l’image, ma motivation pour contribuer activement au bon déroulement d'une telle conférence et mon attrait pour son apport positif à mon parcours professionnel déterminent de ce fait ma pleine volonté d'intégrer l'équipe des "Student Volunteer".
+
+Dans l’attente d’une réponse de votre part, je vous prie d’agréer, madame, monsieur,
+l’expression de mes salutations distinguées..
+\vspace{0.3cm}
+
+\makeletterclosing
+\end{document}
+
+
+%% end of file `template.tex'.
+
+
