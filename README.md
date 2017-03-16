@@ -3,7 +3,7 @@ Conversion des caractères spécifiques à la langue française en code pour LaT
 
 Un codage propre des caractères accentués dans un document LaTeX nécessite de diviser l'écriture du caractère en spécifiant l'accent à placer, puis le caractère sur lequel placer l'accent.
 
-Par exemple, le mot "écolière" devrait être écrit "\'ecoli\`ere" en LaTeX.
+Par exemple, le mot "écolière" devrait être écrit "\\'ecoli\\`ere" en LaTeX.
 
 ### But du projet
 AccentsLatex se résume à un script Python qui permet de convertir les caractères accentués en code pour LaTeX.
